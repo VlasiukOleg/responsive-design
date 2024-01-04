@@ -58,6 +58,7 @@ ul {
 /* Page-Header */
 
 .page-header {
+  position: relative;
   border-bottom: 2px solid gray;
   padding: 10px 0;
 }
@@ -178,4 +179,25 @@ nav {
   .reviews {
     display: none;
   }
+}
+
+/* Mobile-menu */
+
+.mobile-menu {
+  opacity: 0;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  height: 300px;
+  padding: 20px;
+
+  text-align: center;
+
+  background-color: bisque;
+  transition: opacity 250ms ease-in-out;
+}
+
+.mobile-menu.is-open {
+  opacity: 1;
 }
